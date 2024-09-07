@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 700px;
+            margin: 0 auto;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="logo-resto.jpg" alt="Restaurant Logo">
+    </div>
+    <div class="title">Bukti Pemesanan</div>
+    <table>
+        <tr>
+            <td>Nama Pelayan: <strong>Ahmad Nur Fauzan</strong></td>
+            <td>Tanggal Pemesanan: <input type="text" placeholder="mm/dd/yyyy"></td>
+        </tr>
+        <tr>
+            <td>Nama Pemesan: <strong>Abdullah Azam</strong></td>
+            <td>Alamat Pemesan: Jl. Merdeka No. 15, Kota Balikpapan</td>
+        </tr>
+        <tr>
+            <th>Nama Menu</th>
+            <th>Jumlah</th>
+            <th>Harga Satuan</th>
+            <th>Total Harga</th>
+        </tr>
+        <tr>
+            <td><img src="nasi-goreng.jpg" alt="Nasi Goreng Spesial"> Nasi Goreng Spesial</td>
+            <td><input type="number" value="1"> Porsi</td>
+            <td>Rp 25.000</td>
+            <td>Rp 25.000</td>
+        </tr>
+        <tr>
+            <td><img src="https://via.placeholder.com/50" alt="Es Teh Manis"> Es Teh Manis</td>
+            <td><input type="number" value="1"> Gelas</td>
+            <td>Rp 5.000</td>
+            <td>Rp 5.000</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Pesanan</td>
+            <td>Rp 30.000</td>
+        </tr>
+        <tr>
+            <td colspan="3">Pajak</td>
+            <td>Rp 2.000</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Tagihan</td>
+            <td>Rp 32.000</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Metode Pembayaran:
+                <table>
+                    <tr>
+                        <td><input type="radio" name="payment" value="bca"> Bank BCA</td>
+                        <td><input type="radio" name="payment" value="bri"> Bank BRI</td>
+                        <td><input type="radio" name="payment" value="ovo"> OVO</td>
+                        <td><input type="radio" name="payment" value="gopay"> GoPay</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+        <ul>
+            <li>Nama: Ahmad Nur Fauzan</li>
+            <li>NIM: 2209106057</li>
+            <li>Praktikum Web: Posttest 1</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
